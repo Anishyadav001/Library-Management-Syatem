@@ -1,0 +1,159 @@
+[
+  {
+    "name": "book",
+    "fields": [
+      {
+        "name": "Title",
+        "type": "text",
+        "description": "Book title",
+        "options": null
+      },
+      {
+        "name": "Author",
+        "type": "text",
+        "description": "Book author name",
+        "options": null
+      },
+      {
+        "name": "Category",
+        "type": "text",
+        "description": "Book category",
+        "options": [
+          "Fiction",
+          "Non-Fiction",
+          "Science",
+          "Technology",
+          "History",
+          "Biography",
+          "Literature",
+          "Education",
+          "Reference"
+        ]
+      },
+      {
+        "name": "ISBN",
+        "type": "text",
+        "description": "International Standard Book Number",
+        "options": null
+      },
+      {
+        "name": "Quantity",
+        "type": "number",
+        "description": "Total quantity of books",
+        "options": null
+      },
+      {
+        "name": "Available",
+        "type": "number",
+        "description": "Available quantity for issuing",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "student",
+    "fields": [
+      {
+        "name": "Name",
+        "type": "text",
+        "description": "Student full name",
+        "options": null
+      },
+      {
+        "name": "Email",
+        "type": "text",
+        "description": "Student email address",
+        "options": null
+      },
+      {
+        "name": "Password",
+        "type": "text",
+        "description": "Student password (hashed)",
+        "options": null
+      },
+      {
+        "name": "RollNumber",
+        "type": "text",
+        "description": "Student roll number",
+        "options": null
+      },
+      {
+        "name": "Department",
+        "type": "text",
+        "description": "Student department",
+        "options": [
+          "Computer Science",
+          "Electronics",
+          "Mechanical",
+          "Civil",
+          "Electrical",
+          "IT",
+          "BBA",
+          "MBA"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "issue",
+    "fields": [
+      {
+        "name": "BookId",
+        "type": "text",
+        "description": "Reference to book object ID",
+        "options": null
+      },
+      {
+        "name": "StudentId",
+        "type": "text",
+        "description": "Reference to student object ID",
+        "options": null
+      },
+      {
+        "name": "BookTitle",
+        "type": "text",
+        "description": "Book title for display",
+        "options": null
+      },
+      {
+        "name": "StudentName",
+        "type": "text",
+        "description": "Student name for display",
+        "options": null
+      },
+      {
+        "name": "IssueDate",
+        "type": "datetime",
+        "description": "Date when book was issued",
+        "options": null
+      },
+      {
+        "name": "DueDate",
+        "type": "datetime",
+        "description": "Date when book should be returned",
+        "options": null
+      },
+      {
+        "name": "ReturnDate",
+        "type": "datetime",
+        "description": "Actual return date",
+        "options": null
+      },
+      {
+        "name": "Fine",
+        "type": "number",
+        "description": "Fine amount in rupees",
+        "options": null
+      },
+      {
+        "name": "Status",
+        "type": "text",
+        "description": "Issue status",
+        "options": [
+          "Issued",
+          "Returned"
+        ]
+      }
+    ]
+  }
+]

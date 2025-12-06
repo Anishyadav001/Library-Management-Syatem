@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book - Library Management</title>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root { --primary-color: #3b82f6; --secondary-color: #dbeafe; --accent-color: #1e40af; --text-primary: #1f2937; --text-secondary: #6b7280; --background: #f9fafb; --card-bg: #ffffff; --border-color: #e5e7eb; --success-color: #10b981; --danger-color: #ef4444; --warning-color: #f59e0b; }
+        [data-theme="dark"] { --primary-color: #60a5fa; --secondary-color: #1e3a8a; --accent-color: #93c5fd; --text-primary: #f9fafb; --text-secondary: #d1d5db; --background: #111827; --card-bg: #1f2937; --border-color: #374151; --success-color: #34d399; --danger-color: #f87171; --warning-color: #fbbf24; }
+    }
+    @layer base { body { @apply bg-[var(--background)] text-[var(--text-primary)]; } }
+    @layer utilities { .gradient-bg { background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); } }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="components/Toast.js"></script>
+    <script type="text/babel" src="components/ThemeToggle.js"></script>
+    <script type="text/babel" src="components/AdminHeader.js"></script>
+    <script type="text/babel" src="issue-book-app.js"></script>
+</body>
+</html>

@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System - Login</title>
-    <meta name="description" content="Modern Library Management System for managing books, students, and book issues">
-    <meta name="keywords" content="library, management, books, students, admin">
-    <meta property="og:title" content="Library Management System">
-    <meta property="og:description" content="Modern Library Management System for managing books, students, and book issues">
-    <meta name="twitter:title" content="Library Management System">
-    <meta name="twitter:description" content="Modern Library Management System for managing books, students, and book issues">
-
+    <title>Manage Books - Library Management</title>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
-
     <style type="text/tailwindcss">
     @layer theme {
         :root {
@@ -32,7 +24,6 @@
             --danger-color: #ef4444;
             --warning-color: #f59e0b;
         }
-        
         [data-theme="dark"] {
             --primary-color: #60a5fa;
             --secondary-color: #1e3a8a;
@@ -47,19 +38,8 @@
             --warning-color: #fbbf24;
         }
     }
-
-    @layer base {
-        body {
-            @apply bg-[var(--background)] text-[var(--text-primary)];
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-    }
-
-    @layer utilities {
-        .gradient-bg {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-        }
-    }
+    @layer base { body { @apply bg-[var(--background)] text-[var(--text-primary)]; } }
+    @layer utilities { .gradient-bg { background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); } }
     </style>
 </head>
 <body>
@@ -67,6 +47,8 @@
     <script type="text/babel" src="utils/auth.js"></script>
     <script type="text/babel" src="components/Toast.js"></script>
     <script type="text/babel" src="components/ThemeToggle.js"></script>
-    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/AdminHeader.js"></script>
+    <script type="text/babel" src="components/Modal.js"></script>
+    <script type="text/babel" src="books-app.js"></script>
 </body>
 </html>
